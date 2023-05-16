@@ -81,7 +81,10 @@
         <None Include="App.config" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Images\Лого ТНС.jpg" />
+      <Resource Include="Images\logo.jpg" />
+    </ItemGroup>
+    <ItemGroup>
+      <Resource Include="Images\restart.jpg" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
