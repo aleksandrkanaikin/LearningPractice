@@ -3,9 +3,9 @@
 /workspace.xml
 # Rider ignored files
 /contentModel.xml
+/projectSettingsUpdater.xml
 /.idea.TNS.iml
 /modules.xml
-/projectSettingsUpdater.xml
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml

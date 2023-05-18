@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/restart.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("telecom_neva_svyaz.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("telecom_neva_svyaz_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("user.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("user.tt")]
 
 
