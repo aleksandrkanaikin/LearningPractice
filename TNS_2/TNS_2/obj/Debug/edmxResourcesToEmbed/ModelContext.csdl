@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TeleconNevaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Highway">
+    <Key>
+      <PropertyRef Name="Серийный_номер" />
+    </Key>
+    <Property Name="Серийный_номер" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Название" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C_Частота" Type="Double" />
+    <Property Name="C_Коэффициент_затухания" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C_Технология_передачи_данных" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C_Расположение" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F7" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F8" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F9" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F10" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="F11" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Subs">
+    <Key>
+      <PropertyRef Name="Номер_абонента" />
+    </Key>
+    <Property Name="Номер_абонента" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ФИО" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Пол" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Дата_рождения" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Номер_телефона" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Электронная_почта" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Адрес_прописки" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Адрес_проживания" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Серия_и_номер_паспорта" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Код_подразделения" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Кем_выдан" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Дата_выдачи_паспорта" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Номер_договора" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Дата_заключения_договора" Type="DateTime" Precision="3" />
+    <Property Name="Тип_договора" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Причина_расторжения_договора" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Лицевой_счет" Type="Double" />
+    <Property Name="Услуги" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Услуги1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Услуги2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Дата_расторжения_договора" Type="DateTime" Precision="3" />
+    <Property Name="F22" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Серийный_номер_оборудования_" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Фамилия" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Имя" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Отчество" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Пол" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Роль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Номер" Type="Int32" Nullable="false" />
+    <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Фото" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Access_Networks">
+    <Key>
+      <PropertyRef Name="Серийный_номер" />
+    </Key>
+    <Property Name="Серийный_номер" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Наименование" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Количество_портов_" Type="Double" />
+    <Property Name="Стандарт_передачи_данных_" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Частота" Type="Double" />
+    <Property Name="Интерфейсы" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Скорость_передачи_данных" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Место_расположения" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Applications">
+    <Key>
+      <PropertyRef Name="F1" />
+    </Key>
+    <Property Name="F1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="C20_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C21_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C22_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C23_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C24_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C25_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C26_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C27_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C28_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C29_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C30_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C31_August" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C1_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C2_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C3_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C4_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C5_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C6_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="C7_September" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="Номер_абонента" />
+    </Key>
+    <Property Name="Дата_платежа" Type="DateTime" Precision="3" />
+    <Property Name="Сумма_платежа" Type="Double" />
+    <Property Name="Баланс_абонента" Type="Double" />
+    <Property Name="Дата_баланса" Type="DateTime" Precision="3" />
+    <Property Name="Задолженность" Type="Double" />
+    <Property Name="Номер_абонента" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubsTariffs">
+    <Key>
+      <PropertyRef Name="ЛС_абонента" />
+    </Key>
+    <Property Name="ЛС_абонента" Type="Double" Nullable="false" />
+    <Property Name="Тарифы_абонента" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Обращение" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Suds_Equipment">
+    <Key>
+      <PropertyRef Name="Серийный_номер" />
+    </Key>
+    <Property Name="Серийный_номер" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Наименование" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Порты" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Стандарт_передачи" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Скорость" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Адрес_абонента" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Тарифы2_">
+    <Key>
+      <PropertyRef Name="Услуга" />
+    </Key>
+    <Property Name="Услуга" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Название_тарифа" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Условия" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Стоимость__руб_мес" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="TeleconNevaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Highway" EntityType="Self.Highway" />
+    <EntitySet Name="Subs" EntityType="Self.Subs" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="Access_Networks" EntityType="Self.Access_Networks" />
+    <EntitySet Name="Applications" EntityType="Self.Applications" />
+    <EntitySet Name="Payments" EntityType="Self.Payments" />
+    <EntitySet Name="SubsTariffs" EntityType="Self.SubsTariffs" />
+    <EntitySet Name="Suds_Equipment" EntityType="Self.Suds_Equipment" />
+    <EntitySet Name="Тарифы2_" EntityType="Self.Тарифы2_" />
+  </EntityContainer>
+</Schema>

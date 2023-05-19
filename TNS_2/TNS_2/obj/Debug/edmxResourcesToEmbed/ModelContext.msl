@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TeleconNevaModelContainer" CdmEntityContainer="TeleconNevaEntities">
+    <EntitySetMapping Name="Highway">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Highway">
+        <MappingFragment StoreEntitySet="Highway">
+          <ScalarProperty Name="Серийный_номер" ColumnName="Серийный номер" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="C_Частота" ColumnName=" Частота" />
+          <ScalarProperty Name="C_Коэффициент_затухания" ColumnName=" Коэффициент затухания" />
+          <ScalarProperty Name="C_Технология_передачи_данных" ColumnName=" Технология передачи данных" />
+          <ScalarProperty Name="C_Расположение" ColumnName=" Расположение" />
+          <ScalarProperty Name="F7" ColumnName="F7" />
+          <ScalarProperty Name="F8" ColumnName="F8" />
+          <ScalarProperty Name="F9" ColumnName="F9" />
+          <ScalarProperty Name="F10" ColumnName="F10" />
+          <ScalarProperty Name="F11" ColumnName="F11" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subs">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Subs">
+        <MappingFragment StoreEntitySet="Subs">
+          <ScalarProperty Name="Номер_абонента" ColumnName="Номер абонента" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Пол" ColumnName="Пол" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата рождения" />
+          <ScalarProperty Name="Номер_телефона" ColumnName="Номер телефона" />
+          <ScalarProperty Name="Электронная_почта" ColumnName="Электронная почта" />
+          <ScalarProperty Name="Адрес_прописки" ColumnName="Адрес прописки" />
+          <ScalarProperty Name="Адрес_проживания" ColumnName="Адрес проживания" />
+          <ScalarProperty Name="Серия_и_номер_паспорта" ColumnName="Серия и номер паспорта" />
+          <ScalarProperty Name="Код_подразделения" ColumnName="Код подразделения" />
+          <ScalarProperty Name="Кем_выдан" ColumnName="Кем выдан" />
+          <ScalarProperty Name="Дата_выдачи_паспорта" ColumnName="Дата выдачи паспорта" />
+          <ScalarProperty Name="Номер_договора" ColumnName="Номер договора" />
+          <ScalarProperty Name="Дата_заключения_договора" ColumnName="Дата заключения договора" />
+          <ScalarProperty Name="Тип_договора" ColumnName="Тип договора" />
+          <ScalarProperty Name="Причина_расторжения_договора" ColumnName="Причина расторжения договора" />
+          <ScalarProperty Name="Лицевой_счет" ColumnName="Лицевой счет" />
+          <ScalarProperty Name="Услуги" ColumnName="Услуги" />
+          <ScalarProperty Name="Услуги1" ColumnName="Услуги1" />
+          <ScalarProperty Name="Услуги2" ColumnName="Услуги2" />
+          <ScalarProperty Name="Дата_расторжения_договора" ColumnName="Дата расторжения договора" />
+          <ScalarProperty Name="F22" ColumnName="F22" />
+          <ScalarProperty Name="Серийный_номер_оборудования_" ColumnName="Серийный номер оборудования " />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="TeleconNevaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Фамилия" ColumnName="Фамилия" />
+          <ScalarProperty Name="Имя" ColumnName="Имя" />
+          <ScalarProperty Name="Отчество" ColumnName="Отчество" />
+          <ScalarProperty Name="Пол" ColumnName="Пол" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Роль" ColumnName="Роль" />
+          <ScalarProperty Name="Номер" ColumnName="Номер" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+          <ScalarProperty Name="Фото" ColumnName="Фото" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Access_Networks">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Access_Networks">
+        <MappingFragment StoreEntitySet="Access_Networks">
+          <ScalarProperty Name="Серийный_номер" ColumnName="Серийный номер" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Количество_портов_" ColumnName="Количество портов " />
+          <ScalarProperty Name="Стандарт_передачи_данных_" ColumnName="Стандарт передачи данных " />
+          <ScalarProperty Name="Частота" ColumnName="Частота" />
+          <ScalarProperty Name="Интерфейсы" ColumnName="Интерфейсы" />
+          <ScalarProperty Name="Скорость_передачи_данных" ColumnName="Скорость передачи данных" />
+          <ScalarProperty Name="Место_расположения" ColumnName="Место расположения" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Applications">
+        <MappingFragment StoreEntitySet="Applications">
+          <ScalarProperty Name="F1" ColumnName="F1" />
+          <ScalarProperty Name="C20_August" ColumnName="20 August" />
+          <ScalarProperty Name="C21_August" ColumnName="21 August" />
+          <ScalarProperty Name="C22_August" ColumnName="22 August" />
+          <ScalarProperty Name="C23_August" ColumnName="23 August" />
+          <ScalarProperty Name="C24_August" ColumnName="24 August" />
+          <ScalarProperty Name="C25_August" ColumnName="25 August" />
+          <ScalarProperty Name="C26_August" ColumnName="26 August" />
+          <ScalarProperty Name="C27_August" ColumnName="27 August" />
+          <ScalarProperty Name="C28_August" ColumnName="28 August" />
+          <ScalarProperty Name="C29_August" ColumnName="29 August" />
+          <ScalarProperty Name="C30_August" ColumnName="30 August" />
+          <ScalarProperty Name="C31_August" ColumnName="31 August" />
+          <ScalarProperty Name="C1_September" ColumnName="1 September" />
+          <ScalarProperty Name="C2_September" ColumnName="2 September" />
+          <ScalarProperty Name="C3_September" ColumnName="3 September" />
+          <ScalarProperty Name="C4_September" ColumnName="4 September" />
+          <ScalarProperty Name="C5_September" ColumnName="5 September" />
+          <ScalarProperty Name="C6_September" ColumnName="6 September" />
+          <ScalarProperty Name="C7_September" ColumnName="7 September" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Payments">
+        <MappingFragment StoreEntitySet="Payments">
+          <ScalarProperty Name="Дата_платежа" ColumnName="Дата платежа" />
+          <ScalarProperty Name="Сумма_платежа" ColumnName="Сумма платежа" />
+          <ScalarProperty Name="Баланс_абонента" ColumnName="Баланс абонента" />
+          <ScalarProperty Name="Дата_баланса" ColumnName="Дата баланса" />
+          <ScalarProperty Name="Задолженность" ColumnName="Задолженность" />
+          <ScalarProperty Name="Номер_абонента" ColumnName="Номер абонента" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubsTariffs">
+      <EntityTypeMapping TypeName="TeleconNevaModel.SubsTariffs">
+        <MappingFragment StoreEntitySet="SubsTariffs">
+          <ScalarProperty Name="ЛС_абонента" ColumnName="ЛС абонента" />
+          <ScalarProperty Name="Тарифы_абонента" ColumnName="Тарифы абонента" />
+          <ScalarProperty Name="Обращение" ColumnName="Обращение" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suds_Equipment">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Suds_Equipment">
+        <MappingFragment StoreEntitySet="Suds_Equipment">
+          <ScalarProperty Name="Серийный_номер" ColumnName="Серийный номер" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+          <ScalarProperty Name="Порты" ColumnName="Порты" />
+          <ScalarProperty Name="Стандарт_передачи" ColumnName="Стандарт передачи" />
+          <ScalarProperty Name="Скорость" ColumnName="Скорость" />
+          <ScalarProperty Name="Адрес_абонента" ColumnName="Адрес абонента" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Тарифы2_">
+      <EntityTypeMapping TypeName="TeleconNevaModel.Тарифы2_">
+        <MappingFragment StoreEntitySet="Тарифы2$">
+          <ScalarProperty Name="Услуга" ColumnName="Услуга" />
+          <ScalarProperty Name="Название_тарифа" ColumnName="Название тарифа" />
+          <ScalarProperty Name="Условия" ColumnName="Условия" />
+          <ScalarProperty Name="Стоимость__руб_мес" ColumnName="Стоимость, руб/мес" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

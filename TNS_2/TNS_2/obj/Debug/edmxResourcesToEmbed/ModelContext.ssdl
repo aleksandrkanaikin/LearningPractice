@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище TeleconNevaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Access_Networks" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Access_Networks">
+    <Key>
+      <PropertyRef Name="Серийный номер" />
+    </Key>
+    <Property Name="Серийный номер" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Наименование" Type="nvarchar" MaxLength="255" />
+    <Property Name="Количество портов " Type="float" />
+    <Property Name="Стандарт передачи данных " Type="nvarchar" MaxLength="255" />
+    <Property Name="Частота" Type="float" />
+    <Property Name="Интерфейсы" Type="nvarchar" MaxLength="255" />
+    <Property Name="Скорость передачи данных" Type="nvarchar" MaxLength="255" />
+    <Property Name="Место расположения" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Applications" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Applications">
+    <Key>
+      <PropertyRef Name="F1" />
+    </Key>
+    <Property Name="F1" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="20 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="21 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="22 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="23 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="24 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="25 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="26 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="27 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="28 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="29 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="30 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="31 August" Type="nvarchar" MaxLength="255" />
+    <Property Name="1 September" Type="nvarchar" MaxLength="255" />
+    <Property Name="2 September" Type="nvarchar" MaxLength="255" />
+    <Property Name="3 September" Type="nvarchar" MaxLength="255" />
+    <Property Name="4 September" Type="nvarchar" MaxLength="255" />
+    <Property Name="5 September" Type="nvarchar" MaxLength="255" />
+    <Property Name="6 September" Type="nvarchar" MaxLength="255" />
+    <Property Name="7 September" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Highway">
+    <Key>
+      <PropertyRef Name="Серийный номер" />
+    </Key>
+    <Property Name="Серийный номер" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="255" />
+    <Property Name=" Частота" Type="float" />
+    <Property Name=" Коэффициент затухания" Type="nvarchar" MaxLength="255" />
+    <Property Name=" Технология передачи данных" Type="nvarchar" MaxLength="255" />
+    <Property Name=" Расположение" Type="nvarchar" MaxLength="255" />
+    <Property Name="F7" Type="nvarchar" MaxLength="255" />
+    <Property Name="F8" Type="nvarchar" MaxLength="255" />
+    <Property Name="F9" Type="nvarchar" MaxLength="255" />
+    <Property Name="F10" Type="nvarchar" MaxLength="255" />
+    <Property Name="F11" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Payments" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="Номер абонента" />
+    </Key>
+    <Property Name="Дата платежа" Type="datetime" />
+    <Property Name="Сумма платежа" Type="float" />
+    <Property Name="Баланс абонента" Type="float" />
+    <Property Name="Дата баланса" Type="datetime" />
+    <Property Name="Задолженность" Type="float" />
+    <Property Name="Номер абонента" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Subs">
+    <Key>
+      <PropertyRef Name="Номер абонента" />
+    </Key>
+    <Property Name="Номер абонента" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ФИО" Type="nvarchar" MaxLength="255" />
+    <Property Name="Пол" Type="nvarchar" MaxLength="255" />
+    <Property Name="Дата рождения" Type="nvarchar" MaxLength="255" />
+    <Property Name="Номер телефона" Type="nvarchar" MaxLength="255" />
+    <Property Name="Электронная почта" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес прописки" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес проживания" Type="nvarchar" MaxLength="255" />
+    <Property Name="Серия и номер паспорта" Type="nvarchar" MaxLength="255" />
+    <Property Name="Код подразделения" Type="nvarchar" MaxLength="255" />
+    <Property Name="Кем выдан" Type="nvarchar" MaxLength="255" />
+    <Property Name="Дата выдачи паспорта" Type="nvarchar" MaxLength="255" />
+    <Property Name="Номер договора" Type="nvarchar" MaxLength="255" />
+    <Property Name="Дата заключения договора" Type="datetime" />
+    <Property Name="Тип договора" Type="nvarchar" MaxLength="255" />
+    <Property Name="Причина расторжения договора" Type="nvarchar" MaxLength="255" />
+    <Property Name="Лицевой счет" Type="float" />
+    <Property Name="Услуги" Type="nvarchar" MaxLength="255" />
+    <Property Name="Услуги1" Type="nvarchar" MaxLength="255" />
+    <Property Name="Услуги2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Дата расторжения договора" Type="datetime" />
+    <Property Name="F22" Type="nvarchar" MaxLength="255" />
+    <Property Name="Серийный номер оборудования " Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.SubsTariffs" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="SubsTariffs">
+    <Key>
+      <PropertyRef Name="ЛС абонента" />
+    </Key>
+    <Property Name="ЛС абонента" Type="float" Nullable="false" />
+    <Property Name="Тарифы абонента" Type="nvarchar" MaxLength="255" />
+    <Property Name="Обращение" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Suds_Equipment" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Suds_Equipment">
+    <Key>
+      <PropertyRef Name="Серийный номер" />
+    </Key>
+    <Property Name="Серийный номер" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Наименование" Type="nvarchar" MaxLength="255" />
+    <Property Name="Порты" Type="nvarchar" MaxLength="255" />
+    <Property Name="Стандарт передачи" Type="nvarchar" MaxLength="255" />
+    <Property Name="Скорость" Type="nvarchar" MaxLength="255" />
+    <Property Name="Адрес абонента" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="50" />
+    <Property Name="Имя" Type="nvarchar" MaxLength="50" />
+    <Property Name="Отчество" Type="nvarchar" MaxLength="50" />
+    <Property Name="Пол" Type="char" MaxLength="1" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Роль" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Номер" Type="int" Nullable="false" />
+    <Property Name="Пароль" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Фото" Type="image" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Тарифы2$" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Тарифы2$">
+    <Key>
+      <PropertyRef Name="Услуга" />
+    </Key>
+    <Property Name="Услуга" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Название тарифа" Type="nvarchar" MaxLength="255" />
+    <Property Name="Условия" Type="nvarchar" MaxLength="255" />
+    <Property Name="Стоимость, руб/мес" Type="float" />
+  </EntityType>
+  <EntityContainer Name="Хранилище TeleconNevaModelContainer">
+    <EntitySet Name="Highway" EntityType="Self.Highway" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subs" EntityType="Self.Subs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Access_Networks" EntityType="Self.Access_Networks" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Access_Networks].[Серийный номер] AS [Серийный номер], 
+    [Access_Networks].[Наименование] AS [Наименование], 
+    [Access_Networks].[Количество портов ] AS [Количество портов ], 
+    [Access_Networks].[Стандарт передачи данных ] AS [Стандарт передачи данных ], 
+    [Access_Networks].[Частота] AS [Частота], 
+    [Access_Networks].[Интерфейсы] AS [Интерфейсы], 
+    [Access_Networks].[Скорость передачи данных] AS [Скорость передачи данных], 
+    [Access_Networks].[Место расположения] AS [Место расположения]
+    FROM [dbo].[Access_Networks] AS [Access_Networks]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Applications" EntityType="Self.Applications" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Applications].[F1] AS [F1], 
+    [Applications].[20 August] AS [20 August], 
+    [Applications].[21 August] AS [21 August], 
+    [Applications].[22 August] AS [22 August], 
+    [Applications].[23 August] AS [23 August], 
+    [Applications].[24 August] AS [24 August], 
+    [Applications].[25 August] AS [25 August], 
+    [Applications].[26 August] AS [26 August], 
+    [Applications].[27 August] AS [27 August], 
+    [Applications].[28 August] AS [28 August], 
+    [Applications].[29 August] AS [29 August], 
+    [Applications].[30 August] AS [30 August], 
+    [Applications].[31 August] AS [31 August], 
+    [Applications].[1 September] AS [1 September], 
+    [Applications].[2 September] AS [2 September], 
+    [Applications].[3 September] AS [3 September], 
+    [Applications].[4 September] AS [4 September], 
+    [Applications].[5 September] AS [5 September], 
+    [Applications].[6 September] AS [6 September], 
+    [Applications].[7 September] AS [7 September]
+    FROM [dbo].[Applications] AS [Applications]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Payments" EntityType="Self.Payments" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Payments].[Дата платежа] AS [Дата платежа], 
+    [Payments].[Сумма платежа] AS [Сумма платежа], 
+    [Payments].[Баланс абонента] AS [Баланс абонента], 
+    [Payments].[Дата баланса] AS [Дата баланса], 
+    [Payments].[Задолженность] AS [Задолженность], 
+    [Payments].[Номер абонента] AS [Номер абонента]
+    FROM [dbo].[Payments] AS [Payments]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SubsTariffs" EntityType="Self.SubsTariffs" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SubsTariffs].[ЛС абонента] AS [ЛС абонента], 
+    [SubsTariffs].[Тарифы абонента] AS [Тарифы абонента], 
+    [SubsTariffs].[Обращение] AS [Обращение]
+    FROM [dbo].[SubsTariffs] AS [SubsTariffs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Suds_Equipment" EntityType="Self.Suds_Equipment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Suds_Equipment].[Серийный номер] AS [Серийный номер], 
+    [Suds_Equipment].[Наименование] AS [Наименование], 
+    [Suds_Equipment].[Порты] AS [Порты], 
+    [Suds_Equipment].[Стандарт передачи] AS [Стандарт передачи], 
+    [Suds_Equipment].[Скорость] AS [Скорость], 
+    [Suds_Equipment].[Адрес абонента] AS [Адрес абонента]
+    FROM [dbo].[Suds_Equipment] AS [Suds_Equipment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Тарифы2$" EntityType="Self.Тарифы2$" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Тарифы2$].[Услуга] AS [Услуга], 
+    [Тарифы2$].[Название тарифа] AS [Название тарифа], 
+    [Тарифы2$].[Условия] AS [Условия], 
+    [Тарифы2$].[Стоимость, руб/мес] AS [Стоимость, руб/мес]
+    FROM [dbo].[Тарифы2$] AS [Тарифы2$]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
