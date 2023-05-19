@@ -17,6 +17,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -29,7 +30,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -82,44 +82,52 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Customers.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="Access_Networks.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="CustomersAdress.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="Applications.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="Employees.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="Highway.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="Equipment.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="Manager.cs" />
+    <Compile Include="ModelContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelContext.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EquipmentInstallation.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="ModelContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="PortType.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="ModelContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelContext.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Positions.cs">
-      <DependentUpon>User.tt</DependentUpon>
+    <Compile Include="Payments.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Subs.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubsTariffs.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Suds_Equipment.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>User.tt</DependentUpon>
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="User.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>User.Context.tt</DependentUpon>
+    <Compile Include="Timer.cs" />
+    <Compile Include="Users.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="User.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>User.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>User.edmx</DependentUpon>
+    <Compile Include="Тарифы2_.cs">
+      <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -152,17 +160,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="ModelContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelContext.edmx.diagram">
+      <DependentUpon>ModelContext.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <EntityDeploy Include="User.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>User.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="User.edmx.diagram">
-      <DependentUpon>User.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +183,16 @@
     <Resource Include="images\restart.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ModelContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelContext.edmx</DependentUpon>
+      <LastGenOutput>ModelContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelContext.edmx</DependentUpon>
+      <LastGenOutput>ModelContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Telecom_Neva_Svyaz.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -182,15 +200,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Telecom_Neva_Svyaz.mdf</DependentUpon>
     </Content>
-    <Content Include="User.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>User.Context.cs</LastGenOutput>
-      <DependentUpon>User.edmx</DependentUpon>
+    <Content Include="TeleconNeva.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="User.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>User.edmx</DependentUpon>
-      <LastGenOutput>User.cs</LastGenOutput>
+    <Content Include="TeleconNeva_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>TeleconNeva.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

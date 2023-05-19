@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using static TNS.Timer;
 
 namespace TNS
 {
@@ -26,24 +16,64 @@ namespace TNS
             InitializeComponent();
         }
 
+        TeleconNevaEntities db = new TeleconNevaEntities();
+        Users user = new Users();
         private void SignIn_Btn_Click(object sender, RoutedEventArgs e)
         {
-            using(Telecom_Neva_SvyazEntities db = new Telecom_Neva_SvyazEntities())
-            {
-                var val = db.Employees.FirstOrDefault(p => p.Номер_телефона== PhoneNumberTxb.Text && p.Пароль == PasswordTxb.Text);
-                if (val != null)
-                {
-                    string position = string.IsNullOrEmpty(val.Positions.Должность) ? "No name" : val.Positions.Должность;
-                    string userFirstName = string.IsNullOrEmpty(val.Фамилия) ? "No name" : val.Фамилия;
-                    string userName = string.IsNullOrEmpty(val.Имя) ? "No name" : val.Имя;
-                    MessageBox.Show($"User name: {userFirstName} {userName} \nДолжность: {position}");
-                }
-            }
+            CheckingTheAccessCode();          
         }
 
         private void Cancel_Btn_Click(object sender, RoutedEventArgs e)
         {
+            PhoneNumberTxb.Clear();
+            PasswordTxb.Clear();
+            ConfirmCode.Clear();
+        }
 
+        private void PhoneNumberTxb_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.Key != Key.Enter) return;
+            var num = Convert.ToInt32(PhoneNumberTxb.Text);
+            user = db.Users.FirstOrDefault(p => p.Номер == num);
+            if(user == null) MessageBox.Show("Не верный номер пользователя"); ;
+        }
+
+        private void PasswordTxb_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key != Key.Enter) return;
+            if(user != null)
+            {
+                if(user.Пароль == PasswordTxb.Text)
+                {
+                    ConfCode();
+                }
+                else MessageBox.Show("Не верный номер пользователя");
+            }
+        }
+
+        private void UpdateCode_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            ConfCode();
+        }
+
+        private void ConfCode()
+        {
+            MessageBox.Show("Код доступа = " + Convert.ToString(Manager.CodVhoda) + " введите его в течение 10 секунд. " +
+                            "\nВ случае неудачи нажмите на кнопку рядом с полем ввода кода");
+            ShutdownTimer _timer = new ShutdownTimer(10);
+            _timer.Run();
+        }
+
+        private void CheckingTheAccessCode()
+        {
+            if (ConfirmCode.Text == Convert.ToString(Manager.CodVhoda))
+            {
+                MessageBox.Show($"{user.Фамилия} {user.Имя} {user.Отчество} \n{user.Роль}");
+            }
+            else
+            {
+                MessageBox.Show("Не верный код доступа");
+            }
         }
     }
 }

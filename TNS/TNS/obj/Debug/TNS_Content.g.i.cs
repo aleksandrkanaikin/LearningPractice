@@ -8,9 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("modelcontext.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("modelcontext.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("telecom_neva_svyaz.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("telecom_neva_svyaz_log.ldf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("user.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("user.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("teleconneva.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("teleconneva_log.ldf")]
 
 

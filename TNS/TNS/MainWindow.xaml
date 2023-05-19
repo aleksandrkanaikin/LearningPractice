@@ -5,12 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TNS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="700">
-    <Grid>
-        <!-- <Grid.RowDefinitions> -->
-        <!--     <RowDefinition></RowDefinition> -->
-        <!--     <RowDefinition></RowDefinition> -->
-        <!-- </Grid.RowDefinitions> -->
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>        
         <TextBlock FontSize="24" Margin="75,80,0,0">Телеком Нева Связь</TextBlock>
         <Image Source="/Images/logo.jpg" VerticalAlignment="Top" 
                HorizontalAlignment="Right"
@@ -18,16 +14,16 @@
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <WrapPanel Margin="0,0,0,8">
                 <Label Content="Номер" FontSize="16" Margin="0,0,11,0"></Label>
-                <TextBox x:Name="PhoneNumberTxb" Width="170"></TextBox>
+                <TextBox x:Name="PhoneNumberTxb" Width="170" KeyUp="PhoneNumberTxb_KeyUp"></TextBox>
             </WrapPanel>
             <WrapPanel>
                 <Label Content="Пароль" FontSize="16" Margin="0,0,6,0"></Label>
-                <TextBox x:Name="PasswordTxb" Width="170"></TextBox>
+                <TextBox x:Name="PasswordTxb" Width="170" KeyUp="PasswordTxb_KeyUp"></TextBox>
             </WrapPanel>
             <WrapPanel Margin="0,8,0,0">
                 <Label Content="Код" FontSize="16" Margin="0,0,33,0"></Label>
-                <TextBox Width="120"></TextBox>
-                <Button Margin="18,0,0,0" Width="32">
+                <TextBox x:Name="ConfirmCode" Width="120"></TextBox>
+                <Button x:Name="UpdateCode_Btn" Margin="18,0,0,0" Width="32" Click="UpdateCode_Btn_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="./Images/restart.jpg"></ImageBrush>
                     </Button.Background>
