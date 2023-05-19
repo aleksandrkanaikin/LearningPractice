@@ -6,7 +6,7 @@
     <edmx:StorageModels>
       <Schema Namespace="Хранилище TeleconNevaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TNS\TNS\TELECONNEVA.MDF.dbo.Access_Networks" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Access_Networks" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Access_Networks">
           <Key>
             <PropertyRef Name="Серийный номер" />
@@ -21,7 +21,7 @@
           <Property Name="Место расположения" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TNS\TNS\TELECONNEVA.MDF.dbo.Applications" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Applications" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Applications">
           <Key>
             <PropertyRef Name="F1" />
@@ -64,7 +64,7 @@
           <Property Name="F11" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TNS\TNS\TELECONNEVA.MDF.dbo.Payments" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Payments" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Payments">
           <Key>
             <PropertyRef Name="Номер абонента" />
@@ -105,7 +105,7 @@
           <Property Name="Серийный номер оборудования " Type="nvarchar" MaxLength="255" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TNS\TNS\TELECONNEVA.MDF.dbo.SubsTariffs" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.SubsTariffs" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="SubsTariffs">
           <Key>
             <PropertyRef Name="ЛС абонента" />
@@ -115,7 +115,7 @@
           <Property Name="Обращение" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TNS\TNS\TELECONNEVA.MDF.dbo.Suds_Equipment" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Suds_Equipment" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Suds_Equipment">
           <Key>
             <PropertyRef Name="Серийный номер" />
@@ -153,7 +153,7 @@
           <Property Name="Фото" Type="image" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TNS\TNS\TELECONNEVA.MDF.dbo.Тарифы2$" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+предупреждение 6002: В таблице или представлении "C:\USERS\USER\DESKTOP\LEARNINGPRACTICE\TELECONNEVA.MDF.dbo.Тарифы2$" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Тарифы2$">
           <Key>
             <PropertyRef Name="Услуга" />

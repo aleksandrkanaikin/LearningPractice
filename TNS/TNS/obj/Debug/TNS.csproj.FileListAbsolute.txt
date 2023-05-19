@@ -22,8 +22,6 @@ C:\Users\User\source\repos\TNS\TNS\obj\Debug\TNS.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\TNS\TNS\obj\Debug\TNS.csproj.CopyComplete
 C:\Users\User\source\repos\TNS\TNS\obj\Debug\TNS.exe
 C:\Users\User\source\repos\TNS\TNS\obj\Debug\TNS.pdb
-C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\Telecom_Neva_Svyaz.mdf
-C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\Telecom_Neva_Svyaz_log.ldf
 C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\TNS.exe.config
 C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\TNS.exe
 C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\TNS.pdb
@@ -46,5 +44,3 @@ C:\Users\User\Desktop\LearningPractice\TNS\TNS\obj\Debug\TNS.csproj.CoreCompileI
 C:\Users\User\Desktop\LearningPractice\TNS\TNS\obj\Debug\TNS.csproj.CopyComplete
 C:\Users\User\Desktop\LearningPractice\TNS\TNS\obj\Debug\TNS.exe
 C:\Users\User\Desktop\LearningPractice\TNS\TNS\obj\Debug\TNS.pdb
-C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\TeleconNeva.mdf
-C:\Users\User\Desktop\LearningPractice\TNS\TNS\bin\Debug\TeleconNeva_log.ldf

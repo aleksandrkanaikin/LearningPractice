@@ -183,32 +183,6 @@
     <Resource Include="images\restart.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelContext.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelContext.edmx</DependentUpon>
-      <LastGenOutput>ModelContext.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelContext.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelContext.edmx</DependentUpon>
-      <LastGenOutput>ModelContext.cs</LastGenOutput>
-    </Content>
-    <Content Include="Telecom_Neva_Svyaz.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Telecom_Neva_Svyaz_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Telecom_Neva_Svyaz.mdf</DependentUpon>
-    </Content>
-    <Content Include="TeleconNeva.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TeleconNeva_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>TeleconNeva.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +196,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ModelContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelContext.edmx</DependentUpon>
+      <LastGenOutput>ModelContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelContext.edmx</DependentUpon>
+      <LastGenOutput>ModelContext.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

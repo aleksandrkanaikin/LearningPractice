@@ -4,13 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2b40ac3c0b044b89be3b6f4e6e112c62" Name="Diagram1" ZoomLevel="64">
+      <Diagram DiagramId="f9df85f7083e4d45afaef2f1f152fff1" Name="Diagram1">
         <EntityTypeShape EntityType="TeleconNevaModel.Highway" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.Subs" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.Users" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.Access_Networks" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TeleconNevaModel.Applications" Width="1.5" PointX="7" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TeleconNevaModel.Applications" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.Payments" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.SubsTariffs" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TeleconNevaModel.Suds_Equipment" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
