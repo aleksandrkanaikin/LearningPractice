@@ -31,3 +31,5 @@ C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CalcBaseStant
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CalcBaseStantionPage.baml
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\UserSupportPage.g.cs
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\UserSupportPage.baml
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\BillingPage.g.cs
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\BillingPage.baml

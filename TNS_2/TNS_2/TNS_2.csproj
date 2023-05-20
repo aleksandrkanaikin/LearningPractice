@@ -78,6 +78,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BillingPage.xaml.cs">
+      <DependentUpon>BillingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CalcBaseStantionPage.xaml.cs">
       <DependentUpon>CalcBaseStantionPage.xaml</DependentUpon>
     </Compile>
@@ -123,6 +126,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\BillingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CalcBaseStantionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

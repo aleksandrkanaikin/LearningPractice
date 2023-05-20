@@ -42,7 +42,7 @@ namespace TNS_2
 
         private void Billing_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new BillingPage());
         }
 
         private void Support_Btn_Click(object sender, RoutedEventArgs e)
