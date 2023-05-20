@@ -78,8 +78,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CalcBaseStantionPage.xaml.cs">
+      <DependentUpon>CalcBaseStantionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CRMPage.xaml.cs">
       <DependentUpon>CRMPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StatusControlPage.xaml.cs">
+      <DependentUpon>StatusControlPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Payments.cs">
       <DependentUpon>ModelContext.tt</DependentUpon>
@@ -114,7 +120,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\CalcBaseStantionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CRMPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StatusControlPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

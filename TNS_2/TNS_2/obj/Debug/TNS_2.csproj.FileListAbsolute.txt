@@ -25,3 +25,7 @@ C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\TNS_2.exe
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\TNS_2.pdb
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CRMPage.g.cs
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CRMPage.baml
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\StatusControlPage.g.cs
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\StatusControlPage.baml
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CalcBaseStantionPage.g.cs
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CalcBaseStantionPage.baml

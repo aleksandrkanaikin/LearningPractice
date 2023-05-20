@@ -32,7 +32,7 @@ namespace TNS_2
 
         private void EquipmentControl_Btn_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new StatusControlPage());
         }
 
         private void Assets_Btn_Click(object sender, RoutedEventArgs e)
@@ -48,6 +48,11 @@ namespace TNS_2
         private void Support_Btn_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new CRMPage());
+        }
+
+        private void UsersComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
