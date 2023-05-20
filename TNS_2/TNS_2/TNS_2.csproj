@@ -87,6 +87,9 @@
     <Compile Include="Pages\StatusControlPage.xaml.cs">
       <DependentUpon>StatusControlPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\UserSupportPage.xaml.cs">
+      <DependentUpon>UserSupportPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Payments.cs">
       <DependentUpon>ModelContext.tt</DependentUpon>
     </Compile>
@@ -133,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SubscribersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UserSupportPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

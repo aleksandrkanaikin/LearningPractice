@@ -29,3 +29,5 @@ C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\StatusControl
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\StatusControlPage.baml
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CalcBaseStantionPage.g.cs
 C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\CalcBaseStantionPage.baml
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\UserSupportPage.g.cs
+C:\Users\User\Desktop\LearningPractice\TNS_2\TNS_2\obj\Debug\Pages\UserSupportPage.baml
